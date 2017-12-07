@@ -127,15 +127,6 @@ limitations under the License.
                 android:layout_height="48dp">
 
                 <ImageView
-                    android:id="@+id/prev"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="?selectableItemBackgroundBorderless"
-                    android:src="@drawable/ic_skip_previous_white_48dp"
-                    android:contentDescription="@string/skip_prev"/>
-
-                <ImageView
                     android:id="@+id/play_pause"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -156,6 +147,17 @@ limitations under the License.
             </LinearLayout>
 
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/prev"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/skip_prev"
+            android:src="@drawable/ic_skip_previous_white_48dp" />
 
     </RelativeLayout>
 
